@@ -1,0 +1,95 @@
+body{
+    margin: 30%;
+    padding: 5%;
+    background-color: rgb(58, 26, 26);
+    
+}
+.container{
+    width: 200px;
+    height: 200px;
+    /* background: red; */
+    position: relative;
+}
+
+.box{
+    display: block;
+    width: 100.5%;
+    height: 63px;
+    border: 2px solid rgb(201, 197, 197);
+}
+.font .box{
+    background: #fa5252;
+
+}
+.back .box{
+    background: #07c7e0;
+
+}
+
+.right .box {
+    background: rgb(154, 253, 5);
+}
+.left .box {
+    background: rgb(135, 42, 221);
+}
+.top .box {
+    background: rgb(12, 2, 20);
+}
+.bottom .box {
+    background: rgb(59, 252, 155);
+}
+
+
+.cube{
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+animation: rotatecube 10s infinite;
+}
+@keyframes rotatecube{
+    0%{
+        transform: rotate(0deg) rotateY(360deg) rotate(90deg);
+      }
+    25%{
+        transform: rotate(90deg) rotateY(270deg) rotate(180deg);
+    }
+    50%{
+        transform: rotate(180deg) rotateY(180deg) rotate(0deg);
+    }
+
+    75%{
+        transform: rotate(270deg) rotateY(90deg) rotate(360deg);
+    }
+    100%{
+        transform: rotate(360deg) rotateY(0deg) rotate(270deg);
+    }
+    125%{
+        transform: rotate(90deg) rotateY(270deg) rotate(180deg);
+    }
+}
+
+
+.cube > div{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+
+.cube .front{
+    transform: rotateY(0deg) translateZ(100px);
+}
+.cube .back{
+    transform: rotateX(180deg) translateZ(100px);
+}
+.cube .right{
+    transform: rotateY(90deg) translateZ(100px);
+}
+.cube .left{
+    transform: rotateY(-90deg) translateZ(100px);
+}
+.cube .top{
+    transform: rotateX(90deg) translateZ(100px);
+}
+.cube .bottom{
+    transform: rotateX(-90deg) translateZ(100px);
+}
