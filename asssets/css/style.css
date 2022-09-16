@@ -21,11 +21,13 @@ body{
     background: #fa5252;
 
 }
+
+
 .back .box{
     background: #07c7e0;
 
 }
-
+                            /* boxes colour */
 .right .box {
     background: rgb(154, 253, 5);
 }
@@ -46,6 +48,9 @@ body{
     transform-style: preserve-3d;
 animation: rotatecube 10s infinite;
 }
+
+       /* roation for the cube */
+
 @keyframes rotatecube{
     0%{
         transform: rotate(0deg) rotateY(360deg) rotate(90deg);
